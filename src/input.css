@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chat_message::before, .chat_message::after{
+    content:"";
+    @apply apsolute bg-white;
+}
+.chat_message::before{
+    @apply w-4 h-4 rounded-full -bottom-2;
+}
+.chat_message::before{
+    @apply w-2 h-2 rounded-full -bottom-4;
+}
+.chat_message-left::before{
+    @apply left-8;
+}
+.chat_message-left::after{
+    @apply left-5;
+}
+.chat_message-right::before{
+    @apply right-8;
+}
+.chat_message-right::after{
+    @apply right-5;
+}
+.slick-dots{
+    @apply flex mt-16 justify-center gap-x-3;
+}
+.slick-dots li{
+    text-indent: -9999px;
+    @apply w-4 h-4 bg-gray-1001 rounded-full cursor-pointer;
+}
+.slick-dots li.slick-active{
+    @apply bg-primary;
+}

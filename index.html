@@ -1,0 +1,805 @@
+
+
+<!-- <!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Products</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet" >
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="font-body dark:bg-dark ">
+    <div class="container  px-20 ">
+        <div class="grid grid-cols-3 items-center text-center py-6">
+            <div class="">
+                <a href="#"> <svg width="178" height="37" viewBox="0 0 178 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.13307 34.4587C1.40988 34.4587 1.6082e-07 33.0488 1.49105e-07 31.3256L7.46349e-08 20.372L7.88626 20.372L7.88626 20.3598L12.6263 20.3598C13.8482 20.3285 14.8821 19.2633 14.8821 18.01C14.8821 16.7255 13.8168 15.6602 12.5323 15.6602L6.26614 15.6602L6.26614 15.6622L4.26148e-08 15.6622L2.13007e-08 12.5272C9.58534e-09 10.804 1.40988 9.3941 3.13307 9.3941L12.5323 9.3941C14.9134 9.3941 16.9499 10.24 18.6104 11.9319C20.3023 13.5924 21.1482 15.6289 21.1482 18.01C21.1482 20.3598 20.3336 22.3963 18.6731 24.0569C17.0126 25.7174 15.0074 26.5947 12.6576 26.626L6.26614 26.626L6.26614 31.3256C6.26614 33.0488 4.85626 34.4587 3.13307 34.4587Z" fill="#02BC6B"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0975 5.7578C28.5589 9.11993 30.3031 13.3073 30.3031 18.0672C30.3031 22.7473 28.6319 26.9307 25.2239 30.3034L20.3852 25.7508C22.5047 23.6533 23.545 21.128 23.545 18.0672C23.545 14.9832 22.4734 12.4619 20.3031 10.3538L25.0975 5.7578Z" fill="#02897A"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5055 -3.14562e-08C37.4911 4.97781 39.9999 11.1499 39.9999 18.2338C39.9999 25.2071 37.5922 31.3753 32.6884 36.3638L28.0186 31.8009C31.6715 28.085 33.4614 23.5781 33.4614 18.2338C33.4614 12.8358 31.6111 8.33276 27.8787 4.60616L32.5055 -3.14562e-08Z" fill="#035B81"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 26.6524L6.26614 26.6524L6.26614 31.326C6.26614 33.0492 4.85626 34.4591 3.13307 34.4591C1.40988 34.4591 4.34898e-08 33.0492 3.17744e-08 31.326L0 26.6524Z" fill="#028E37"/>
+                    <path class="dark:fill-current text-white" d="M73.91 14.72C73.91 15.94 73.63 17.06 73.07 18.08C72.51 19.08 71.65 19.89 70.49 20.51C69.33 21.13 67.89 21.44 66.17 21.44H62.99V29H57.86V7.94H66.17C67.85 7.94 69.27 8.23 70.43 8.81C71.59 9.39 72.46 10.19 73.04 11.21C73.62 12.23 73.91 13.4 73.91 14.72ZM65.78 17.36C66.76 17.36 67.49 17.13 67.97 16.67C68.45 16.21 68.69 15.56 68.69 14.72C68.69 13.88 68.45 13.23 67.97 12.77C67.49 12.31 66.76 12.08 65.78 12.08H62.99V17.36H65.78ZM81.7107 15.05C82.3107 14.13 83.0607 13.41 83.9607 12.89C84.8607 12.35 85.8607 12.08 86.9607 12.08V17.51H85.5507C84.2707 17.51 83.3107 17.79 82.6707 18.35C82.0307 18.89 81.7107 19.85 81.7107 21.23V29H76.5807V12.26H81.7107V15.05ZM97.0327 29.24C95.3927 29.24 93.9127 28.89 92.5927 28.19C91.2927 27.49 90.2627 26.49 89.5027 25.19C88.7627 23.89 88.3927 22.37 88.3927 20.63C88.3927 18.91 88.7727 17.4 89.5327 16.1C90.2927 14.78 91.3327 13.77 92.6527 13.07C93.9727 12.37 95.4527 12.02 97.0927 12.02C98.7327 12.02 100.213 12.37 101.533 13.07C102.853 13.77 103.893 14.78 104.653 16.1C105.413 17.4 105.793 18.91 105.793 20.63C105.793 22.35 105.403 23.87 104.623 25.19C103.863 26.49 102.813 27.49 101.473 28.19C100.153 28.89 98.6727 29.24 97.0327 29.24ZM97.0327 24.8C98.0127 24.8 98.8427 24.44 99.5227 23.72C100.223 23 100.573 21.97 100.573 20.63C100.573 19.29 100.233 18.26 99.5527 17.54C98.8927 16.82 98.0727 16.46 97.0927 16.46C96.0927 16.46 95.2627 16.82 94.6027 17.54C93.9427 18.24 93.6127 19.27 93.6127 20.63C93.6127 21.97 93.9327 23 94.5727 23.72C95.2327 24.44 96.0527 24.8 97.0327 24.8ZM107.494 20.6C107.494 18.88 107.814 17.37 108.454 16.07C109.114 14.77 110.004 13.77 111.124 13.07C112.244 12.37 113.494 12.02 114.874 12.02C115.974 12.02 116.974 12.25 117.874 12.71C118.794 13.17 119.514 13.79 120.034 14.57V6.8H125.164V29H120.034V26.6C119.554 27.4 118.864 28.04 117.964 28.52C117.084 29 116.054 29.24 114.874 29.24C113.494 29.24 112.244 28.89 111.124 28.19C110.004 27.47 109.114 26.46 108.454 25.16C107.814 23.84 107.494 22.32 107.494 20.6ZM120.034 20.63C120.034 19.35 119.674 18.34 118.954 17.6C118.254 16.86 117.394 16.49 116.374 16.49C115.354 16.49 114.484 16.86 113.764 17.6C113.064 18.32 112.714 19.32 112.714 20.6C112.714 21.88 113.064 22.9 113.764 23.66C114.484 24.4 115.354 24.77 116.374 24.77C117.394 24.77 118.254 24.4 118.954 23.66C119.674 22.92 120.034 21.91 120.034 20.63ZM145.406 12.26V29H140.276V26.72C139.756 27.46 139.046 28.06 138.146 28.52C137.266 28.96 136.286 29.18 135.206 29.18C133.926 29.18 132.796 28.9 131.816 28.34C130.836 27.76 130.076 26.93 129.536 25.85C128.996 24.77 128.726 23.5 128.726 22.04V12.26H133.826V21.35C133.826 22.47 134.116 23.34 134.696 23.96C135.276 24.58 136.056 24.89 137.036 24.89C138.036 24.89 138.826 24.58 139.406 23.96C139.986 23.34 140.276 22.47 140.276 21.35V12.26H145.406ZM148.07 20.63C148.07 18.89 148.42 17.37 149.12 16.07C149.84 14.77 150.83 13.77 152.09 13.07C153.37 12.37 154.83 12.02 156.47 12.02C158.57 12.02 160.32 12.57 161.72 13.67C163.14 14.77 164.07 16.32 164.51 18.32H159.05C158.59 17.04 157.7 16.4 156.38 16.4C155.44 16.4 154.69 16.77 154.13 17.51C153.57 18.23 153.29 19.27 153.29 20.63C153.29 21.99 153.57 23.04 154.13 23.78C154.69 24.5 155.44 24.86 156.38 24.86C157.7 24.86 158.59 24.22 159.05 22.94H164.51C164.07 24.9 163.14 26.44 161.72 27.56C160.3 28.68 158.55 29.24 156.47 29.24C154.83 29.24 153.37 28.89 152.09 28.19C150.83 27.49 149.84 26.49 149.12 25.19C148.42 23.89 148.07 22.37 148.07 20.63ZM176.585 24.65V29H173.975C172.115 29 170.665 28.55 169.625 27.65C168.585 26.73 168.065 25.24 168.065 23.18V16.52H166.025V12.26H168.065V8.18H173.195V12.26H176.555V16.52H173.195V23.24C173.195 23.74 173.315 24.1 173.555 24.32C173.795 24.54 174.195 24.65 174.755 24.65H176.585Z" fill="#173A56"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="col-span-2">
+                <button  class="fixed top-8 right-4 z-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><title>e-remove</title><g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" class="stroke-current" stroke="#565656">
+                        <line x1="38" y1="10" x2="10" y2="38"></line> <line x1="38" y1="38" x2="10" y2="10"></line></g>
+                    </svg>
+                </button>
+                <ul class="fixed inset-0 z-40 text-dark p-8 flex-col  lg:flex-row  xl:gap-x-7 gap-x-3 gap-y-2 flex flex-wrap justify-start lg:justify-end dark:text-white">
+                    <li><a href="#" class="font-semibold">Product</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#" class="inline-flex font-semibold border border-dark  rounded px-6 py-2  hover:bg-secondary hover:text-white hover:border-primary dark:text-white  dark:border-white">
+                        Sign In</a>
+                    </li>
+                    <li><a href="#" class="inline-flex bg-dark text-white font-semibold border border-dark dark:border-white rounded px-6 py-2 hover:text-white  hover:bg-secondary dark:text-white hover:border-primary"
+                        >Sign Up</a>
+                    </li>
+                    <li>
+                        <button onclick="document.getElementsByTagName('html')[0].classList.toggle('dark')">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="16" fill="#F3F3F3"/>
+                                <path d="M16 26C21.514 26 26 21.514 26 16C26 10.486 21.514 6 16 6C10.486 6 6 10.486 6 16C6 21.514 10.486 26 16 26ZM16 8C20.411 8 24 11.589 24 16C24 20.411 20.411 24 16 24C11.589 24 8 20.411 8 16C8 11.589 11.589 8 16 8Z" fill="#02897A"/>
+                                <path d="M23 16C23 12.134 19.865 9 16 9V23C19.865 23 23 19.866 23 16Z" fill="#02897A"/>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+                <div class="lg:hidden px-5 flex justify-end">
+                    <a href="#" >
+                        <svg class="dark:text-white"  width="28" height="31" viewBox="0 0 28 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5 15.5H24.5" class="stroke-current" stroke="#173A56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.5 7.75H24.5"  class="stroke-current" stroke="#173A56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.5 23.25H24.5" class="stroke-current" stroke="#173A56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div> 
+           
+                
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./src/input.css">
+  
+   
+<body class="font-body dark:bg-dark transition text-dark-800">
+    <!--Header-->
+    <div class="container sm:px-20 px-2 mb-6">
+        <div class="grid grid-cols-3 items-center py-6">
+            <div>
+                <a href="./">
+                    <svg width="178" height="37" viewBox="0 0 178 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.13307 34.4587C1.40988 34.4587 1.6082e-07 33.0488 1.49105e-07 31.3256L7.46349e-08 20.372L7.88626 20.372L7.88626 20.3598L12.6263 20.3598C13.8482 20.3285 14.8821 19.2633 14.8821 18.01C14.8821 16.7255 13.8168 15.6602 12.5323 15.6602L6.26614 15.6602L6.26614 15.6622L4.26148e-08 15.6622L2.13006e-08 12.5272C9.58529e-09 10.804 1.40988 9.3941 3.13307 9.3941L12.5323 9.3941C14.9134 9.3941 16.9499 10.24 18.6104 11.9319C20.3023 13.5924 21.1482 15.6289 21.1482 18.01C21.1482 20.3598 20.3336 22.3963 18.6731 24.0569C17.0126 25.7174 15.0074 26.5947 12.6576 26.626L6.26614 26.626L6.26614 31.3256C6.26614 33.0488 4.85626 34.4587 3.13307 34.4587Z"
+                            fill="#02BC6B" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M25.0975 5.7578C28.5589 9.11993 30.3031 13.3073 30.3031 18.0672C30.3031 22.7473 28.6319 26.9307 25.2239 30.3034L20.3852 25.7508C22.5047 23.6533 23.545 21.128 23.545 18.0672C23.545 14.9832 22.4734 12.4619 20.3031 10.3538L25.0975 5.7578Z"
+                            fill="#02897A" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M32.5055 -3.14562e-08C37.4911 4.97781 39.9999 11.1499 39.9999 18.2338C39.9999 25.2071 37.5922 31.3753 32.6884 36.3638L28.0186 31.8009C31.6715 28.085 33.4614 23.5781 33.4614 18.2338C33.4614 12.8358 31.6111 8.33276 27.8787 4.60616L32.5055 -3.14562e-08Z"
+                            fill="#035B81" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M-1.14326e-05 26.6524L6.26613 26.6524L6.26613 31.326C6.26613 33.0492 4.85625 34.4591 3.13306 34.4591C1.40987 34.4591 -1.13891e-05 33.0492 -1.14009e-05 31.326L-1.14326e-05 26.6524Z"
+                            fill="#028E37" />
+                        <path class="dark:fill-current text-white"
+d="M73.91 14.72C73.91 15.94 73.63 17.06 73.07 18.08C72.51 19.08 71.65 19.89 70.49 20.51C69.33 21.13 67.89 21.44 66.17 21.44H62.99V29H57.86V7.94H66.17C67.85 7.94 69.27 8.23 70.43 8.81C71.59 9.39 72.46 10.19 73.04 11.21C73.62 12.23 73.91 13.4 73.91 14.72ZM65.78 17.36C66.76 17.36 67.49 17.13 67.97 16.67C68.45 16.21 68.69 15.56 68.69 14.72C68.69 13.88 68.45 13.23 67.97 12.77C67.49 12.31 66.76 12.08 65.78 12.08H62.99V17.36H65.78ZM81.7107 15.05C82.3107 14.13 83.0607 13.41 83.9607 12.89C84.8607 12.35 85.8607 12.08 86.9607 12.08V17.51H85.5507C84.2707 17.51 83.3107 17.79 82.6707 18.35C82.0307 18.89 81.7107 19.85 81.7107 21.23V29H76.5807V12.26H81.7107V15.05ZM97.0327 29.24C95.3927 29.24 93.9127 28.89 92.5927 28.19C91.2927 27.49 90.2627 26.49 89.5027 25.19C88.7627 23.89 88.3927 22.37 88.3927 20.63C88.3927 18.91 88.7727 17.4 89.5327 16.1C90.2927 14.78 91.3327 13.77 92.6527 13.07C93.9727 12.37 95.4527 12.02 97.0927 12.02C98.7327 12.02 100.213 12.37 101.533 13.07C102.853 13.77 103.893 14.78 104.653 16.1C105.413 17.4 105.793 18.91 105.793 20.63C105.793 22.35 105.403 23.87 104.623 25.19C103.863 26.49 102.813 27.49 101.473 28.19C100.153 28.89 98.6727 29.24 97.0327 29.24ZM97.0327 24.8C98.0127 24.8 98.8427 24.44 99.5227 23.72C100.223 23 100.573 21.97 100.573 20.63C100.573 19.29 100.233 18.26 99.5527 17.54C98.8927 16.82 98.0727 16.46 97.0927 16.46C96.0927 16.46 95.2627 16.82 94.6027 17.54C93.9427 18.24 93.6127 19.27 93.6127 20.63C93.6127 21.97 93.9327 23 94.5727 23.72C95.2327 24.44 96.0527 24.8 97.0327 24.8ZM107.494 20.6C107.494 18.88 107.814 17.37 108.454 16.07C109.114 14.77 110.004 13.77 111.124 13.07C112.244 12.37 113.494 12.02 114.874 12.02C115.974 12.02 116.974 12.25 117.874 12.71C118.794 13.17 119.514 13.79 120.034 14.57V6.8H125.164V29H120.034V26.6C119.554 27.4 118.864 28.04 117.964 28.52C117.084 29 116.054 29.24 114.874 29.24C113.494 29.24 112.244 28.89 111.124 28.19C110.004 27.47 109.114 26.46 108.454 25.16C107.814 23.84 107.494 22.32 107.494 20.6ZM120.034 20.63C120.034 19.35 119.674 18.34 118.954 17.6C118.254 16.86 117.394 16.49 116.374 16.49C115.354 16.49 114.484 16.86 113.764 17.6C113.064 18.32 112.714 19.32 112.714 20.6C112.714 21.88 113.064 22.9 113.764 23.66C114.484 24.4 115.354 24.77 116.374 24.77C117.394 24.77 118.254 24.4 118.954 23.66C119.674 22.92 120.034 21.91 120.034 20.63ZM145.406 12.26V29H140.276V26.72C139.756 27.46 139.046 28.06 138.146 28.52C137.266 28.96 136.286 29.18 135.206 29.18C133.926 29.18 132.796 28.9 131.816 28.34C130.836 27.76 130.076 26.93 129.536 25.85C128.996 24.77 128.726 23.5 128.726 22.04V12.26H133.826V21.35C133.826 22.47 134.116 23.34 134.696 23.96C135.276 24.58 136.056 24.89 137.036 24.89C138.036 24.89 138.826 24.58 139.406 23.96C139.986 23.34 140.276 22.47 140.276 21.35V12.26H145.406ZM148.07 20.63C148.07 18.89 148.42 17.37 149.12 16.07C149.84 14.77 150.83 13.77 152.09 13.07C153.37 12.37 154.83 12.02 156.47 12.02C158.57 12.02 160.32 12.57 161.72 13.67C163.14 14.77 164.07 16.32 164.51 18.32H159.05C158.59 17.04 157.7
+16.4156.38 16.4C155.44 16.4 154.69 16.77 154.13 17.51C153.57 18.23 153.29 19.27 153.29 20.63C153.29 21.99 153.57 23.04 154.13 23.78C154.69 24.5 155.44 24.86 156.38 24.86C157.7 24.86 158.59 24.22 159.05 22.94H164.51C164.07 24.9 163.14 26.44 161.72 27.56C160.3 28.68 158.55 29.24 156.47 29.24C154.83 29.24 153.37 28.89 152.09 28.19C150.83 27.49 149.84 26.49 149.12 25.19C148.42 23.89 148.07 22.37 148.07 20.63ZM176.585 24.65V29H173.975C172.115 29 170.665 28.55 169.625 27.65C168.585 26.73 168.065 25.24 168.065 23.18V16.52H166.025V12.26H168.065V8.18H173.195V12.26H176.555V16.52H173.195V23.24C173.195 23.74 173.315 24.1 173.555 24.32C173.795 24.54 174.195 24.65 174.755 24.65H176.585Z"
+                            fill="#173A56" />
+                    </svg>
+                </a>
+            </div>
+            <div class="col-span-2">
+                <button id="btn-close-menu" class="hidden dark:text-white fixed top-6 right-6 z-50"
+                    onclick="close_menu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                        <title>e-remove</title>
+                        <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none"
+                            class="stroke-current" stroke="#565656">
+                            <line x1="38" y1="10" x2="10" y2="38"></line>
+                            <line x1="38" y1="38" x2="10" y2="10"></line>
+                        </g>
+                    </svg>
+
+                </button>
+                <ul id="main-menu"
+                    class="hidden fixed inset-0 z-40 bg-white dark:bg-dark p-8 flex-col justify-start gap-y-2 lg:bg-transparent lg:relative lg:items-center lg:flex-row lg:flex lg:p-0 flex-wrap xl:gap-x-7 gap-x-3 lg:justify-end dark:text-white">
+                    <li class="font-semibold">
+                        <a href="#">Product</a>
+                    </li>
+                    <li>
+                        <a href="#">Customers</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">Resources</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class=" inline-flex border border-light rounded px-6 py-2 text-secondary hover:bg-primary hover:border-primary hover:text-white dark:text-white">
+                            Sign In
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="inline-flex border hover:border-light rounded px-6 py-2 hover:text-secondary hover:bg-while bg-primary border-primary text-white">
+                            Sign Up
+                        </a>
+                    </li>
+                    <li>
+                        <button onclick="document.getElementsByTagName('html')[0].classList.toggle('dark')">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="16" fill="#F3F3F3" />
+                                <path
+                                    d="M16 26C21.514 26 26 21.514 26 16C26 10.486 21.514 6 16 6C10.486 6 6 10.486 6 16C6 21.514 10.486 26 16 26ZM16 8C20.411 8 24 11.589 24 16C24 20.411 20.411 24 16 24C11.589 24 8 20.411 8 16C8 11.589 11.589 8 16 8Z"
+                                    fill="#02897A" />
+                                <path d="M23 16C23 12.134 19.865 9 16 9V23C19.865 23 23 19.866 23 16Z" fill="#02897A" />
+                            </svg>
+
+                        </button>
+                    </li>
+                </ul>
+                <div class="lg:hidden flex justify-end gap-x-4">
+                    
+                    <button onclick="document.getElementsByTagName('html')[0].classList.toggle('dark')">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="16" fill="#F3F3F3" />
+                            <path
+                                d="M16 26C21.514 26 26 21.514 26 16C26 10.486 21.514 6 16 6C10.486 6 6 10.486 6 16C6 21.514 10.486 26 16 26ZM16 8C20.411 8 24 11.589 24 16C24 20.411 20.411 24 16 24C11.589 24 8 20.411 8 16C8 11.589 11.589 8 16 8Z"
+                                fill="#02897A" />
+                            <path d="M23 16C23 12.134 19.865 9 16 9V23C19.865 23 23 19.866 23 16Z" fill="#02897A" />
+                        </svg>
+                    </button>
+                    <button onclick="open_menu()">
+                        <svg class="dark:text-white" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                            viewBox="0 0 48 48">
+                            <title>menu-8</title>
+                            <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none"
+                                class="stroke-current" stroke="#565656">
+                                <line x1="2" y1="24" x2="46" y2="24" class="stroke-current" stroke="#565656"></line>
+                                <line x1="2" y1="10" x2="46" y2="10"></line>
+                                <line x1="2" y1="38" x2="46" y2="38"></line>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header-->
+    <!-- start hero banner-->
+    <div class="container sm:px-20 px-2 mb-28">
+        <div class="grid sm:grid-cols-2 items-center">
+            <div class="max-w-md order-2  sm:order-none">
+                <h2 class="dark:text-white text-h2 font-bold text-dark-800 mb-4 text-center sm:text-left">Work at the speed<br/>of thought</h2>
+                <div class="dark:text-white text-dark-800 mb-11 text-center sm:text-left">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</div>
+                <div class="flexflex-wrap text-center justify-center sm:text-left sm:justify-start">
+                    <a href="#"
+                        class="inline-flex border font-semibold hover:border-light rounded px-6 py-2 hover:text-secondary hover:bg-while bg-primary border-primary text-white">
+                        Get started
+                    </a>
+                    <a href="#"
+                        class="underline gap-x-2 items-center inline-flex  font-semibold  rounded px-6 py-2 hover:text-secondary   text-primary">
+                        <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8516 8.53032C16.591 8.96531 16.591 10.0347 15.8516 10.4697L2.1954 18.5027C1.44543 18.9439 0.5 18.4031 0.5 17.533V1.46697C0.5 0.596876 1.44543 0.0561381 2.1954 0.497293L15.8516 8.53032Z" fill="#02897A" class="fill-current"/>
+                        </svg> 
+                        <span>Watch the video</span>
+                    </a>
+                </div>
+            </div>
+            <div class="order-1 sm:order-none mb-3 sm:mb-0">
+                <img class="w-full" src="./images/hero.svg" alt="">
+            </div>
+            
+        </div>
+    </div>
+    <!-- End hero banner-->
+    <!--Start session Product  was Built Specifically for You-->
+    <div class="mb-28">
+        <div class="flex flex-wrap justify-center text-center">
+            <h3 class=" dark:text-white font-bold text-h3  max-w-lg mb-14">Product  was Built Specifically for You</h3>
+        </div>
+        <div class="bg-bg-1 bg-bottom bg-no-repeat">
+            <div class="container sm:px-20 px-2 pb-24 ">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 mb-8">
+                    <div class="flex flex-wrap justify-center text-center sm:justify-start sm:text-left ">
+                        <div class="max-w-xxs">
+                            <img class="mb-7 inline-block" src="./images/icons/arrow.svg" alt="arrow">
+                                <h4 class="text-h4 font-bold dark:text-white">
+                                    First click tests
+                                </h4>
+                                <div class="dark:text-white">While most people enjoy casino gambling,</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap justify-center text-center sm:justify-start sm:text-left">
+                        <div class="max-w-xxs">
+                        <img class="mb-7 inline-block" src="./images/icons/arrow1.svg" alt="arrow">
+                        <h4 class="dark:text-white text-h4 font-bold">
+                            Design surveys
+                        </h4>
+                        <div class="dark:text-white">Sports betting, lottery and bingo playing for the fun</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap justify-center text-center sm:justify-start sm:text-left">
+                        <div class="max-w-xxs">
+                        <img class="mb-7 inline-block" src="./images/icons/arrow2.svg" alt="arrow">
+                        <h4 class="dark:text-white text-h4 font-bold">
+                            Preference tests
+                        </h4>
+                        <div class="dark:text-white">The Myspace page defines the individual.</div>
+                    </div>
+                    </div>
+                    <div class="flex flex-wrap justify-center text-center sm:justify-start sm:text-left">
+                        <div class="max-w-xxs">
+                        <img class="mb-7 inline-block" src="./images/icons/arrow.svg" alt="arrow">
+                        <h4 class="dark:text-white text-h4 font-bold">
+                            Five second tests
+                        </h4>
+                        <div class="dark:text-white">Personal choices and the overall personality of the person. </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#"
+                        class="inline-flex border font-semibold hover:border-light rounded px-6 py-2 hover:text-secondary hover:bg-while bg-primary border-primary text-white">
+                        Sign In Now
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+       
+       
+        
+    </div>
+    <!--End Product  was Built Specifically for You-->
+    <!--Start management-->
+    <div class="container sm:px-20 px-2 mb-28">
+        <div class="grid sm:grid-cols-2 items-center">
+            <div class="order-2 sm:order-none py-20">
+                <div class="mb-1 sm:text-left text-center items-center dark:text-white">Effortless Validation for</div>
+                <h3 class="font-bold text-h3 sm:text-left text-center items-center mb-14>Management mb-3 dark:text-white">Management</h3>
+                <div class="max-w-md mb-3 sm:text-left text-center items-center dark:text-white mx-2 sm:mx-20">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </div>
+                <div class="max-w-md mb-3"> 
+                    <div class="mb-1 sm:text-left text-center items-center dark:text-white">
+                        <strong>
+                            Accessory makers
+                        </strong>
+                    </div>
+                    <div class="sm:text-left text-center items-center dark:text-white mx-2 sm:mx-20">
+                        While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
+                    </div>
+                </div>
+                <div class="max-w-md mb-3"> 
+                    <div class="mb-1 sm:text-left text-center items-center dark:text-white">
+                        <strong>
+                            Alterationists
+                        </strong>
+                    </div>
+                    <div class="sm:text-left text-center items-center dark:text-white mx-2 sm:mx-20">
+                        If you are looking for a new way to promote your business that won’t cost you more money, 
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 sm:order-none mb-3 sm:mb-0">
+                <img class="w-full" src="./images/hero1.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <!--End Managemnet-->
+
+    <!--Start customer support-->
+    <div class="container sm:px-20 px-2 mb-28">
+        <div class="grid sm:grid-cols-2 items-center">
+            <div class="order-1 sm:order-none mb-3 sm:mb-0">
+                <img class="w-full" src="./images/hero2.svg" alt="">
+            </div>
+            <div class="order-2 sm:order-none sm:justify-start px-20 py-20 ">
+                <div class="mb-1 sm:text-left text-center items-center dark:text-white">Easier decision making for</div>
+                <h3 class="font-bold text-h3 sm:text-left text-center items-center mb-14>Management mb-7 dark:text-white">Customer Support</h3>
+                <div class="max-w-md mb-7 sm:text-left text-center items-center dark:text-white">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </div>
+                <div class="max-w-md mb-7"> 
+                    <div class="flex">
+                        <img src="./images/icons/tick1.svg" alt="tick1">
+                        <div class="sm:text-left text-center mx-3 items-center max-w-md dark:text-white">
+                            Never worry about overpaying for your energy again. 
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-md mb-7"> 
+                    <div class="flex">
+                        <img src="./images/icons/tick2.svg" alt="">
+                    <div class="sm:text-left text-center items-center mx-3 max-w-md dark:text-white">
+                        We will only switch you to energy companies that we trust and will treat you right
+                    </div>
+                </div>
+                </div>
+                <div class="max-w-md mb-7"> 
+                    <div class="flex">
+                        <img src="./images/icons/tick3.svg" alt="">
+                    <div class="sm:text-left text-center items-center max-w-md mx-3 dark:text-white">
+                        We track the markets daily and know where the savings are.
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--end customer support-->
+    <!--start collaborative-->
+    <div class="container sm:px-20 px-2 mb-28">
+        <div class="grid sm:grid-cols-2 items-center">
+            <div class="order-2 sm:order-none py-20">
+                <div class="dark:text-white mb-1 sm:text-left text-center items-center">Optimisation for</div>
+                <h3 class="font-bold text-h3 sm:text-left text-center items-center mb-14>Management mb-3 dark:text-white">Collaborative</h3>
+                <div class="max-w-md mb-3 sm:text-left text-center items-center dark:text-white mx-2 sm:mx-20">Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. </div>
+                <div class="max-w-md mb-3"> 
+                    <div class="mb-1 sm:text-left text-center items-center dark:text-white">
+                        <strong>
+                            Accessory makers
+                        </strong>
+                    </div>
+                    <div class="sm:text-left text-center items-center dark:text-white mx-2 sm:mx-20">
+                        While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
+                    </div>
+                </div>
+                <div class="max-w-md mb-3"> 
+                    <div class="mb-1 sm:text-left text-center items-center dark:text-white">
+                        <strong>
+                            Alterationists
+                        </strong>
+                    </div>
+                    <div class="sm:text-left text-center items-center dark:text-white mx-2 sm:mx-20">
+                        If you are looking for a new way to promote your business that won’t cost you more money, 
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 sm:order-none mb-3 sm:mb-0">
+                <img class="w-full" src="./images/hero3.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <!--end collaborative-->
+    <!--start quick and easy to process-->
+    <div class="dark:bg-bg-2-dark bg-bg-2 bg-center bg-top bg-no-repeat text-center justify-center pt-14 mb-28 sm:mx-20 mx-0">
+        <div class="container mb-28">
+                <div class=" sm:px-20 px-4 pb-48">  
+                    <h3 class="dark:text-white font-bold text-h3 mb-4">Quick & Easy Process</h3>
+                    <div class="dark:text-white flex flex-wrap justify-center max-w">Do you require some help for your project: Conception workshop,<br/>
+                        prototyping, marketing strategy, landing page, Ux/UI?
+                    </div>
+                    <div class="grid sm:grid-cols-2  max-w-4xl  mx-auto gap-y-6 gap-x-10">
+                        <div class="flex items-center gap-x-4">
+                            <div  class="sm:w-24 sm:h-24  w-12 h-12 rounded-full overflow-hidden border-[#FF0909] border-3">
+                                <img src="./images/avatar-1.jpg" alt="">
+                            </div>
+                            <div class="dark:text-dark-900 bg-white px-6 py-4 rounded-3xl shadow-lg relative chat_message chat_message-left">
+                                I can take care of your pitch
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-x-4">
+                            <div  class=" order-2 sm:w-24 sm:h-24  w-12 h-12 rounded-full overflow-hidden border-[#4923e4] border-3">
+                                <img src="./images/avatar-1.jpg" alt="">
+                            </div>
+                            <div class="bg-white px-6 py-4 rounded-3xl shadow-lg relative chat_message chat_message-right">
+                                I can prototype your app
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-x-4">
+                            <div  class="order-2 sm:w-24 sm:h-24  w-12 h-12 rounded-full overflow-hidden border-[#dd1fc1] border-3">
+                                <img src="./images/avatar-1.jpg" alt="">
+                            </div>
+                            <div class="bg-white px-6 py-4 rounded-3xl shadow-lg relative chat_message chat_message-left">
+                                I can design you website
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-x-4">
+                            <div  class=" sm:w-24 sm:h-24  w-12 h-12 rounded-full overflow-hidden border-[#2fe11f] border-3">
+                                <img src="./images/avatar-1.jpg" alt="">
+                            </div>
+                            <div class="bg-white px-6 py-4 rounded-3xl shadow-lg relative chat_message chat_message-right">
+                                I can help marketing strategy
+                            </div>
+                        </div>
+
+                    </div>
+                     <div class="text-center my-10">
+                        <a href="#"
+                        class="inline-flex border font-semibold hover:border-light rounded px-6 py-2 hover:text-secondary hover:bg-while bg-primary border-primary text-white">
+                        Contact Our Export
+                        </a>
+                    </div>
+                </div>
+            </div>
+      
+    </div>
+    <!--end quick and easy to process-->
+    <!--start contents-->
+    <div class="pt-14 mb-28">
+    <div class="container sm:px-20 ">
+        <h3 class="font-bold text-h3 dark:text-white sm:text-left text-center ">
+            Contents Strategies
+        </h3>
+        <div class="mb-2 dark:text-white sm:text-left text-center">
+            We focus on ergonomics and meeting you where you work. It's only a keystroke away. 
+        </div>
+        <div class="slides ">
+            <div class="slide px-4 ">
+            <div class="border border-gray-1000 rounded-lg  group bg-white">
+                <a href="#">
+                    <img class="width:200px, height:200px rounded-lg mb-5" src="./images/thinking.webp" alt="">
+                </a>
+                <div class="mb-5 px-6 ">By <b>Wahid Ari</b> |  03 March 2019</div>
+                <h4 class="mb-5 px-6 text-h4-2 font-bold group-hover:text-primary "><b>Increasing Prosperity With Positive Thinking</b></h4>
+            </div>
+            </div>
+            <div class="slide px-4">
+            <div class="border border-gray-1000 rounded-lg  group bg-white">
+                <a href="#">
+                    <img class="width:200px, height:200px rounded-lg mb-5" src="./images/thinking.webp" alt="">
+                </a>
+                <div class="mb-5 px-6 ">By <b>Wahid Ari</b> |  03 March 2019</div>
+                <h4 class="mb-5 px-6 text-h4-2 font-bold group-hover:text-primary "><b>Increasing Prosperity With Positive Thinking</b></h4>
+            </div>
+            </div>
+            <div class="slide px-4">
+            <div class="border border-gray-1000 rounded-lg  group bg-white">
+                <a href="#">
+                    <img class="width:200px, height:200px rounded-lg mb-5" src="./images/thinking.webp" alt="">
+                </a>
+                <div class="mb-5 px-6 ">By <b>Wahid Ari</b> |  03 March 2019</div>
+                <h4 class="mb-5 px-6 text-h4-2 font-bold group-hover:text-primary "><b>Increasing Prosperity With Positive Thinking</b></h4>
+            </div>
+            </div>
+            <div class="slide px-4">
+                <div class="border border-gray-1000 rounded-lg  group bg-white">
+                    <a href="#">
+                        <img class="width:200px, height:200px rounded-lg mb-5" src="./images/thinking.webp" alt="">
+                    </a>
+                    <div class="mb-5 px-6 ">By <b>Wahid Ari</b> |  03 March 2019</div>
+                    <h4 class="mb-5 px-6 text-h4-2 font-bold group-hover:text-primary "><b>Increasing Prosperity With Positive Thinking</b></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- end contents-->
+    <!--Start price table-->
+    <div class="mx-20 mb-28">
+        <div class="text-center">
+            <h3 class="font-bold text-h3 dark:text-white ">
+                Price Table
+            </h3>
+            <div class="my-2 dark:text-white">We offer competitive price</div>
+            <div class=" grid sm:grid-cols-3 my-6 gap-x-12 sm:gap-y-0 gap-y-4">
+                <div class="shadow-pricing bg-white items-center text-center p-6 rounded-lg">
+                    <h4 class="dark-800 text-h4-2 font-bold ">
+                        Free
+                    </h4>
+                    <div class="">
+                        Brief price description
+                    </div>
+                    <div class="inline-flex text-center gap-x-2 my-4 items-center">
+                        <div class="font-bold text-7xl text-primary"> 
+                            <span>0</span>
+                        </div>
+                        <div class="text-left font-bold text-primary ">
+                            <div>$</div>
+                            <div class="text-second-text" >Per / month</div>
+                        </div>
+                        
+                    </div>
+                    <ul class="flex justify-center flex-col flex-wrap gap-y-4 mb-10 ">
+                        <li>Only 2 Operators</li>
+                        <li>Notifications</li>
+                        <li>Landing Pages</li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="#"
+                        class="inline-flex border font-semibold hover:border-light rounded px-6 py-2 hover:text-secondary hover:bg-while bg-primary border-primary text-white
+                        hover:bg-white hover:text-primary ">
+                        Order now
+                        </a>
+                    </div>
+                </div>
+                <div class="shadow-pricing bg-primary items-center text-center p-6 rounded-lg ">
+                    <h4 class="dark-800 text-h4-2 font-bold text-white">
+                        Standard
+                    </h4>
+                    <div class="text-white">
+                        Brief price description
+                    </div>
+                    <div class="inline-flex text-center gap-x-2 my-4 items-center">
+                        <div class="font-bold text-7xl text-white"> 
+                            <span>5</span>
+                        </div>
+                        <div class="text-left font-bold text-white">
+                            <div>$</div>
+                            <div class="text-second-text" >Per / month</div>
+                        </div>
+                        
+                    </div>
+                    <ul class="flex justify-center flex-col flex-wrap gap-y-4 mb-10 text-white">
+                        <li>5+ Operators</li>
+                        <li>Notifications</li>
+                        <li>Landing Pages</li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="#"
+                        class="hover:bg-primary hover:text-white inline-flex border font-semibold hover:border-light rounded px-6 py-2  bg-white border-white text-primary">
+                        Order now
+                        </a>
+                    </div>
+                </div>
+                <div class="shadow-pricing bg-white items-center text-center p-6 rounded-lg ">
+                    <h4 class="dark-800 text-h4-2 font-bold">
+                        Premium
+                    </h4>
+                    <div>
+                        Brief price description
+                    </div>
+                    <div class="inline-flex text-center gap-x-2 my-4 items-center">
+                        <div class="font-bold text-7xl text-primary"> 
+                            <span>10</span>
+                        </div>
+                        <div class="text-left font-bold text-primary">
+                            <div>$</div>
+                            <div class="text-second-text" >Per / month</div>
+                        </div>
+                        
+                    </div>
+                    <ul class="flex justify-center flex-col flex-wrap gap-y-4 mb-10">
+                        <li>10+ Operators</li>
+                        <li>Notifications</li>
+                        <li>Landing Pages</li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="#"
+                        class="hover:bg-white hover:text-primary inline-flex border font-semibold hover:border-light rounded px-6 py-2 hover:text-secondary hover:bg-while bg-primary border-primary text-white">
+                        Order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End price table-->
+    <!--Start what clients Say-->
+    <div class="sm:mx-20 mb-28 mx-4 text-center items-center">
+        <div class="">
+            <h3 class="font-bold text-h3 text-center dark:text-white ">
+                What Clients Say
+            </h3>
+            <div class="my-2 text-center dark:text-white">Problems trying to resolve the conflict between <br/>
+                the two major realms of Classical physics: Newtonian mechanics </div>
+            <div class=" grid sm:grid-cols-3 my-6 gap-x-12 sm:gap-y-0 gap-y-4 ">
+                <div class="shadow-pricing bg-white   p-6 rounded-lg items-center">
+                   
+                    <div>
+                        <img src="./images/icons/star1.svg" alt="">
+                    </div>
+                    <div class="max-w-md ">
+                        Product helps you see how many 
+                        more days you need to work to 
+                        reach your financial goal.
+                    </div>
+                    <div class="inline-flex  gap-x-2 my-4 items-center">
+                        <div class=" w-24 h-24 rounded-full overflow-hidden"> 
+                            <img src="./images/avatar-1.jpg" alt="">
+                        </div>
+                        <div class="text-left font-bold ">
+                            <div class="text-primary dark:text-white">Wahid Ari</div>
+                            <div class="text-second-text dark:text-white" >Designer</div>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+                <div class="shadow-pricing bg-white   p-6 rounded-lg">
+                   
+                    <div>
+                        <img src="./images/icons/star1.svg" alt="">
+                    </div>
+                    <div class="max-w-md ">
+                        Product helps you see how many 
+                        more days you need to work to 
+                        reach your financial goal.
+                    </div>
+                    <div class="inline-flex  gap-x-2 my-4 items-center">
+                        <div class=" w-24 h-24 rounded-full overflow-hidden"> 
+                            <img src="./images/avatar-1.jpg" alt="">
+                        </div>
+                        <div class="text-left font-bold ">
+                            <div class="text-primary dark:text-white">Wahid Ari</div>
+                            <div class="text-second-text dark:text-white" >Designer</div>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+                <div class="shadow-pricing bg-white   p-6 rounded-lg">
+                   
+                    <div>
+                        <img src="./images/icons/star1.svg" alt="">
+                    </div>
+                    <div class="max-w-md ">
+                        Product helps you see how many 
+                        more days you need to work to 
+                        reach your financial goal.
+                    </div>
+                    <div class="inline-flex  gap-x-2 my-4 items-center">
+                        <div class=" w-24 h-24 rounded-full overflow-hidden"> 
+                            <img src="./images/avatar-1.jpg" alt="">
+                        </div>
+                        <div class="text-left font-bold ">
+                            <div class="text-primary dark:text-white">Wahid Ari</div>
+                            <div class="text-second-text dark:text-white" >Designer</div>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end what clients say-->
+    <!--start join-->
+    <div class="mb-28 mx-20">
+        <div class="sm:mx-40 lg:mx-60 rounded-lg bg-primary items-center dark:text-white">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-2">
+                <div class="order-2">
+                    <h1 class="text-white font-bold sm:py-12 max-w-md mx-10 sm:text-left text-center sm:items-left">Join 100 Compannies who boost their business with Product</h1>
+                    <div class="mx-10 py-12 sm:text-left text-center sm:items-left">
+                        <a href="#"
+                        class="inline-flex border font-semibold hover:border-light rounded px-6 py-2 hover:text-white hover:bg-dark-900 bg-white border-primary text-primary
+                        hover:bg-white hover:text-primary">
+                        This get
+                        </a>
+                    </div>
+                </div>
+                <div class="order-1">
+                    <img src="./images/book.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end join-->
+    <!--start footer-->
+    <div class="mx-20">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-y-8  dark:text-white">
+            <div class="sm:text-left text-center items-center">
+                <span>
+                    <svg width="140" height="25" viewBox="0 0 163 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M106.11 9.8752C105.226 9.3184 104.168 9.04 102.938 9.04C101.611 9.04 100.424 9.3712 99.3762 10.0336C98.3284 10.696 97.5016 11.6464 96.896 12.8848C96.2904 14.1232 95.9876 15.5872 95.9876 17.2768C95.9876 18.9472 96.2904 20.4064 96.896 21.6544C97.5016 22.9024 98.3284 23.8576 99.3762 24.52C100.424 25.1824 101.611 25.5136 102.938 25.5136C104.168 25.5136 105.226 25.2352 106.11 24.6784C106.994 24.1216 107.638 23.3632 108.042 22.4032V25.312H112.974V4H108.042V12.1504C107.638 11.1904 106.994 10.432 106.11 9.8752ZM52.9314 25.312V18.1696H55.9883C57.5841 18.1696 58.9395 17.8864 60.0546 17.32C61.1697 16.7536 62.0108 15.976 62.578 14.9872C63.1451 13.9984 63.4287 12.8704 63.4287 11.6032C63.4287 9.56799 62.7943 7.95041 61.5254 6.7504C60.2564 5.55039 58.4108 4.9504 55.9883 4.9504H48V25.312H52.9314ZM58.4108 11.6032C58.4108 13.3504 57.4207 14.224 55.4404 14.224H52.9314V8.9248H55.4404C57.4207 8.9248 58.4108 9.81759 58.4108 11.6032ZM70.7826 12.2656C71.3978 11.2864 72.1909 10.5088 73.1618 9.9328C74.1327 9.3568 75.1853 9.0688 76.3196 9.0688V14.3392H74.9065C73.5992 14.3392 72.585 14.6176 71.864 15.1744C71.1431 15.7312 70.7826 16.672 70.7826 17.9968V25.312H65.8512V9.2416H70.7826V12.2656ZM90.2055 10.0336C88.9462 9.3712 87.5187 9.04 85.9229 9.04C84.3272 9.04 82.8948 9.3712 81.6259 10.0336C80.357 10.696 79.3621 11.6512 78.6411 12.8992C77.9202 14.1472 77.5597 15.6064 77.5597 17.2768C77.5597 18.9472 77.9202 20.4064 78.6411 21.6544C79.3621 22.9024 80.357 23.8576 81.6259 24.52C82.8948 25.1824 84.3272 25.5136 85.9229 25.5136C87.5187 25.5136 88.9462 25.1824 90.2055 24.52C91.4647 23.8576 92.4549 22.9024 93.1758 21.6544C93.8968 20.4064 94.2573 18.9472 94.2573 17.2768C94.2573 15.6064 93.8968 14.1472 93.1758 12.8992C92.4549 11.6512 91.4647 10.696 90.2055 10.0336ZM85.9229 13.3024C84.9808 13.3024 84.1878 13.6432 83.5437 14.3248C82.8996 15.0064 82.5776 15.9904 82.5776 17.2768C82.5776 18.5632 82.8996 19.5424 83.5437 20.2144C84.1878 20.8864 84.9808 21.2224 85.9229 21.2224C86.865 21.2224 87.6532 20.8864 88.2877 20.2144C88.9221 19.5424 89.2394 18.5632 89.2394 17.2768C89.2394 15.9904 88.9221 15.0064 88.2877 14.3248C87.6532 13.6432 86.865 13.3024 85.9229 13.3024ZM104.524 13.36C103.466 13.36 102.616 13.7056 101.972 14.3968C101.328 15.088 101.006 16.048 101.006 17.2768C101.006 18.5056 101.328 19.4656 101.972 20.1568C102.616 20.848 103.466 21.1936 104.524 21.1936C105.562 21.1936 106.413 20.8384 107.076 20.128C107.739 19.4176 108.071 18.4672 108.071 17.2768C108.071 16.0672 107.739 15.112 107.076 14.4112C106.413 13.7104 105.562 13.36 104.524 13.36ZM127.422 25.312H132.382V9.2416H127.422V17.7664C127.422 18.9376 127.133 19.84 126.557 20.4736C125.98 21.1072 125.192 21.424 124.192 21.424C123.231 21.424 122.466 21.1216 121.899 20.5168C121.332 19.912 121.048 19.0624 121.048 17.968V9.2416H116.146V18.5728C116.146 20.7232 116.689 22.4128 117.775 23.6416C118.862 24.8704 120.327 25.4848 122.173 25.4848C123.384 25.4848 124.447 25.2064 125.36 24.6496C126.273 24.0928 126.96 23.344 127.422 22.4032V25.312ZM143.052 9.04C145.129 9.04 146.869 9.61119 148.272 10.7536C149.676 11.896 150.56 13.4656 150.925 15.4624H145.706C145.552 14.7712 145.235 14.2336 144.754 13.8496C144.273 13.4656 143.668 13.2736 142.937 13.2736C142.072 13.2736 141.361 13.6144 140.803 14.296C140.245 14.9776 139.967 15.9712 139.967 17.2768C139.967 18.5824 140.245 19.576 140.803 20.2576C141.361 20.9392 142.072 21.28 142.937 21.28C143.668 21.28 144.273 21.088 144.754 20.704C145.235 20.32 145.552 19.7824 145.706 19.0912H150.925C150.56 21.088 149.676 22.6576 148.272 23.8C146.869 24.9424 145.129 25.5136 143.052 25.5136C141.476 25.5136 140.077 25.1824 138.856 24.52C137.636 23.8576 136.679 22.9024 135.987 21.6544C135.295 20.4064 134.949 18.9472 134.949 17.2768C134.949 15.5872 135.29 14.1232 135.972 12.8848C136.655 11.6464 137.611 10.696 138.842 10.0336C140.072 9.3712 141.476 9.04 143.052 9.04ZM162.605 25.312V21.0784H161.048C160.433 21.0784 159.995 20.9536 159.736 20.704C159.476 20.4544 159.346 20.0128 159.346 19.3792V13.3888H162.576V9.2416H159.346V5.296H154.415V9.2416H152.252V13.3888H154.415V19.2928C154.415 21.4432 154.939 22.984 155.987 23.9152C157.034 24.8464 158.5 25.312 160.384 25.312H162.605Z" fill="#173A56"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.50646 27.5668C1.12791 27.5668 1.28656e-07 26.4389 1.19284e-07 25.0603L5.97072e-08 16.2974L6.30899 16.2974L6.30899 16.2877L10.101 16.2877C11.0785 16.2627 11.9057 15.4105 11.9057 14.4079C11.9057 13.3802 11.0535 12.5281 10.0258 12.5281L5.01292 12.5281L5.01292 12.5295L3.40913e-08 12.5295L1.70406e-08 10.0216C7.66834e-09 8.64304 1.12791 7.51514 2.50646 7.51514L10.0258 7.51514C11.9307 7.51514 13.5599 8.19188 14.8884 9.54537C16.2418 10.8738 16.9186 12.503 16.9186 14.4079C16.9186 16.2877 16.2669 17.9169 14.9385 19.2454C13.6101 20.5738 12.0059 21.2756 10.1261 21.3007L5.01292 21.3007L5.01292 25.0603C5.01292 26.4389 3.88501 27.5668 2.50646 27.5668Z" fill="#02BC6B"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0779 4.60645C22.8471 7.29616 24.2425 10.646 24.2425 14.454C24.2425 18.198 22.9055 21.5448 20.1791 24.2429L16.3081 20.6008C18.0037 18.9228 18.836 16.9026 18.836 14.454C18.836 11.9868 17.9787 9.96969 16.2424 8.28327L20.0779 4.60645Z" fill="#02897A"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0044 -2.51649e-08C29.9929 3.98225 32 8.91996 32 14.587C32 20.1656 30.0738 25.1003 26.1508 29.091L22.415 25.4408C25.3372 22.468 26.7691 18.8625 26.7691 14.587C26.7691 10.2687 25.2889 6.66621 22.303 3.68493L26.0044 -2.51649e-08Z" fill="#035B81"/>
+                        <path  fill-rule="evenodd" clip-rule="evenodd" d="M0 21.3218L5.01292 21.3218L5.01292 25.0606C5.01292 26.4392 3.88501 27.5671 2.50646 27.5671C1.12791 27.5671 3.47915e-08 26.4392 2.54192e-08 25.0606L0 21.3218Z" fill="#028E37" class="dark:fill-current text-white"/>
+                    </svg>
+                </span>
+                <div class="flex gap-x-4 py-8">
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#EDFFFC] flex items-center justify-center">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 2.01611H7C4.23858 2.01611 2 4.25469 2 7.01611V17.0161C2 19.7775 4.23858 22.0161 7 22.0161H17C19.7614 22.0161 22 19.7775 22 17.0161V7.01611C22 4.25469 19.7614 2.01611 17 2.01611Z" stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 11.3859C16.1234 12.2182 15.9812 13.0681 15.5937 13.8149C15.2062 14.5617 14.5931 15.1673 13.8416 15.5456C13.0901 15.9239 12.2384 16.0555 11.4077 15.9219C10.5771 15.7882 9.80971 15.396 9.21479 14.8011C8.61987 14.2062 8.22768 13.4388 8.09402 12.6081C7.96035 11.7775 8.09202 10.9258 8.47028 10.1743C8.84854 9.42278 9.45414 8.80967 10.2009 8.42217C10.9477 8.03467 11.7977 7.89251 12.63 8.01593C13.4789 8.14181 14.2648 8.53739 14.8716 9.14423C15.4785 9.75108 15.8741 10.537 16 11.3859Z" stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.5 6.51611H17.51" stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#EDFFFC] flex items-center justify-center">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#EDFFFC] flex items-center justify-center">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20" cy="20" r="20" fill="#EDFFFC"/>
+                            <path d="M31 11.0101C30.0424 11.6855 28.9821 12.2022 27.86 12.5401C27.2577 11.8476 26.4573 11.3567 25.567 11.134C24.6767 10.9112 23.7395 10.9673 22.8821 11.2945C22.0247 11.6218 21.2884 12.2045 20.773 12.9638C20.2575 13.7231 19.9877 14.6224 20 15.5401V16.5401C18.2426 16.5856 16.5013 16.1959 14.931 15.4055C13.3607 14.6151 12.0103 13.4487 11 12.0101C11 12.0101 7 21.0101 16 25.0101C13.9405 26.408 11.4872 27.109 9 27.0101C18 32.0101 29 27.0101 29 15.5101C28.9991 15.2315 28.9723 14.9537 28.92 14.6801C29.9406 13.6735 30.6608 12.4028 31 11.0101V11.0101Z" stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="sm:text-left text-center items-center">
+                    <b>Resource</b>
+                </div>
+                <div class="sm:text-left text-center items-center">About Us</div>
+                <div class="sm:text-left text-center items-center">Blog</div>
+                <div class="sm:text-left text-center items-center">Contact</div>
+                <div class="sm:text-left text-center items-center">FAQ</div>
+            </div>
+            <div>
+                <div class="sm:text-left text-center items-center">
+                    <b>Legal Stuff</b>
+                </div>
+                <div class="sm:text-left text-center items-center">Disclaimer</div>
+                <div class="sm:text-left text-center items-center">Financing</div>
+                <div class="sm:text-left text-center items-center">Privacy Policy</div>
+                <div class="sm:text-left text-center items-center">Terms of service</div>
+            </div>
+            <div>
+                <div class="sm:text-left text-center items-center">
+                    <b>knowing you're always on the best energy deal. 
+                    </b>
+                </div>
+                <div class="py-8">
+                    <form action="">
+                        <input class="border border-[#BCD0E5] rounded p-3 mb-4" type="text" placeholder="Type your email here...">
+                        <button href="#" class="inline-flex font-semibold border hover:border-light rounded px-6 py-2 hover:text-secondary hover:bg-white bg-primary border-primary text-white">
+                            Sign up Now
+                        </button>
+                    </form>
+                </div>
+               
+                
+            </div>
+        </div>
+    </div>
+    <!--end footer-->
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+   
+</head>
+    <script>
+        (function($){
+            $(document).ready(function(){
+            $('.slides').slick({
+                slidesToShow: 3,
+                arrows: false,
+                dots: true
+        });
+        });
+        })(jQuery);
+      
+        var main_menu_el = document.getElementById('main-menu');
+        var btn_close_menu=document.getElementById('btn-close-menu');
+        function open_menu(){
+            main_menu_el.classList.add('fixed');
+            main_menu_el.classList.add('inset-0');
+            main_menu_el.classList.remove('flex');
+            main_menu_el.classList.remove('hidden');
+            btn_close_menu_el.classList.toggle('hidden');
+        }
+        function close_menu(){
+            main_menu_el.classList.remove('fixed');
+            main_menu_el.classList.remove('inset-0');
+            main_menu_el.classList.add('hidden');
+            btn_close_menu_el.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
